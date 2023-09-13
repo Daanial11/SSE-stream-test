@@ -20,7 +20,7 @@ import org.apache.http.impl.client.HttpClients;
 public class LoopPostEvent{
 
     
-    @Scheduled(fixedRate=15000)
+    @Scheduled(fixedRate=270000)
     public void postEvent() {
         HttpClient httpclient = HttpClients.createDefault();
         HttpPost request = new HttpPost("http://localhost:8080/api/v1/live-scores");
